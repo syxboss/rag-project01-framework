@@ -40,6 +40,7 @@ git clone https://github.com/huangjia2019/rag-project01-framework.git
 - 更新 apt 软件包列表：`sudo apt update`
 - 安装 Node.js 和 npm：`sudo apt install nodejs npm -y`
 - **备注**：项目中使用的`node`版本为`v22.14.0` ， `npm`版本为`10.9.2`
+- npm版本不一致可能有安装不了部分
 
 #### 3. 安装前端组件：
 
@@ -107,6 +108,12 @@ conda activate rag-project01
 ```
 pip install -r requirements_ubun.txt
 ```
+
+如果不使用GPU加速可以执行一下命令
+```
+pip install -r requirements.txt
+```
+此版本没有GPU加速，适用于普通环境
 
 #### 3. 配置 OpenAI API Key
 
